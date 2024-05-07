@@ -2,7 +2,7 @@ import os
 import re
 import time
 import azure.cognitiveservices.speech as speechsdk
-from FrontEnd.banditTextGen import textGen
+from banditTextGen import textGen
 
 keywords = ['Hey, Tiago', 'Hey Tiago', 'Hi, Tiago', 'Hi Tiago', 'Tiago', 'Hey, Bandit', 'Hey Bandit', 'Hi, Bandit', 'Hi Bandit', 'Bandit']
 endwords = ['End conversation.', 'That will be all.']

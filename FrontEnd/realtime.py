@@ -95,6 +95,7 @@ def from_mic():
 
 
 def to_speaker(text):
+    text = "Rosie, " + text
     speech_synthesis_result = speech_synthesizer.speak_text_async(text).get()
     
     if speech_synthesis_result.reason == speechsdk.ResultReason.SynthesizingAudioCompleted:
